@@ -187,6 +187,9 @@ a:hover{
 }
 .delivery_card{
     background-color: $background-light;
+    .widget{
+        padding: 10px;
+    }
     .card-title{
         text-align: left;
         font-weight: 800;
