@@ -1,3 +1,306 @@
 @use './reset.scss';
+@mixin flexbox($orientation) {
+    display: flex;
+    flex-direction: $orientation;
+}
+$primary-color: #33373d;
+$button-order: rgb(6, 158, 68);
+$background-light: #fff;
 
 /* Add your css here */
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: $primary-color;
+}
+li{
+    list-style-type: none;
+} 
+a:hover{
+    text-decoration: none;
+}  
+.h-container{
+    background-color: $background-light;
+    margin: 0 3%;
+    @include flexbox(row);
+    justify-content: space-between;
+
+    .left_nav{
+        @include flexbox(row);
+        align-items: center;
+        
+        a{
+            padding: 10px;
+            color: $primary-color;
+            font-weight: 700;
+            img{
+                width: 2rem;
+                height: auto;
+            }
+        }
+    }
+
+    .right_nav{
+        @include flexbox(column);
+        li{
+            padding: 10px;
+            a{
+                color: $primary-color;
+                font-weight: 700;
+                img{
+                    width: 2rem;
+                    height: auto;
+                }
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            @include flexbox(row);
+        }
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media only screen and (min-width: 768px) {
+        height: 65vh;
+       }
+    
+}
+.overlay{
+    @include flexbox(column);
+    justify-content: space-between;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.4);
+    @media only screen and (min-width: 768px) {
+        height: 65vh;
+       }
+}
+.banner_top{
+    @include flexbox(row);
+    justify-content:flex-end;
+    align-items: flex-start;
+}
+.btn{
+    margin: 7px;
+}
+.login{
+    border: none;
+    a{
+        color: $background-light;
+        font-family: 'Lato', sans-serif;
+    }
+}
+.login:hover{
+    background-color:transparent;
+    a{
+        color:#D3D3D3;
+    }
+}
+.signup{
+    a{
+        color: $background-light;
+        font-family: 'Lato', sans-serif;
+    }
+    border-color: $background-light;
+}
+.signup:hover{
+    background-color:transparent;
+    border-color: #D3D3D3;
+    a{
+        color:#D3D3D3;
+    }
+}
+.card{
+    background-color: transparent;
+    margin: auto;
+}
+
+
+.banner_middle{
+    .card-img-top{
+        width: 125px;
+        height: auto;
+        margin: 24% auto 30px auto;
+        @media only screen and (min-width: 768px) {
+            margin: 10px auto 15px auto;
+           }
+    }
+    .card-body{
+        .card-title{
+          text-align: center;
+          color: $background-light;
+          font-weight: 300;
+          margin: auto;
+        }
+        padding:10px 20px 5px 20px;
+    }
+}
+
+
+.banner_bottom{
+    .search-restaurant{
+       @include flexbox(column);
+       margin: 3% auto;
+       #search-rest{
+           padding: 9px 0;
+           margin-bottom: 9px;
+           text-align: center;
+           @media only screen and (min-width: 768px) {
+            flex-basis: 79%;
+            margin: 0;
+           }
+
+       }
+       #search-btn{
+           padding: 9px 0;
+           background-color: rgb(203, 32, 45);
+           border-color: rgb(203, 32, 45);
+           color: $background-light;
+           @media only screen and (min-width: 768px) {
+           flex-basis: 20%;
+           }
+       }
+       @media only screen and (min-width: 768px) {
+        @include flexbox(row);
+        justify-content: space-between;
+        margin: 0 15%;
+       }
+    }
+     margin: auto 6%;
+     @media only screen and (min-width: 768px) {
+        margin-top: 1.5%;
+        margin-bottom: 20%;
+     }
+}
+.grey_color{
+    color: #acb4b8;
+}
+.delivery_box{
+    background-color:rgb(243, 243, 243);
+    padding:15px 5%;
+}
+.delivery_card{
+    background-color: $background-light;
+    .card-title{
+        text-align: left;
+        font-weight: 800;
+        padding: 10px;
+    }
+    .btn-primary{
+        width: 100%;
+        margin: auto;
+        background-color: $button-order;
+        border-color: $button-order;
+    }
+    .card-footer{
+        background-color: $background-light;
+        .promo{
+            color: $button-order;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            strong{
+                color: $button-order;
+            }
+        }
+    }
+}
+
+.categories{
+    background-color:rgb(243, 243, 243);
+    padding: 15px 5%;
+    .category-list{
+        text-align: center;
+        font-weight: 700;
+        padding: 0;
+        @include flexbox(row);
+        flex-wrap: wrap;
+        li{
+          flex-basis: 25%;
+          img{
+            max-width:100%;
+            height: auto;
+          }
+        }
+    }
+}
+
+.localities{
+    background-color:rgb(243, 243, 243);
+    padding: 15px 5%;
+    .locality_flex{
+        @include flexbox(row);
+        flex-wrap: wrap;
+    }
+    .locality-list{
+        flex-grow: 1;
+        background-color: $background-light;
+        font-weight: 700;
+        padding: 15px;
+        margin: 0;
+        span{
+            color: #acb4b8;
+        }
+    } 
+    
+}
+footer{
+    background-color: rgb(40, 44, 53);
+    padding: 15px 5%;
+    h2{
+        font-size: 20px;
+    }
+    strong{
+        color: #acb4b8;
+    }
+    li{
+        color: #acb4b8;
+    }
+    .footer-wrapper{
+        .footer_top{
+            margin-bottom: 10px;
+            @include flexbox(row);
+            justify-content: space-between;
+            img{
+                width: 70px;
+                height: auto;
+            }
+            select, option{
+                width:150px;
+                height: 30px;
+                background-color: #000;
+                color: $background-light;
+                border: 1px solid  #acb4b8;
+                padding: 2px;
+                margin: auto 0;
+            }
+        }
+       .footer_mid{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: 1px solid #acb4b8;
+          @include flexbox(row);
+          flex-wrap: wrap;
+          .footer-sec{
+              flex-grow: 1;
+          }
+        }
+        .footer_bottom{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: 1px solid #acb4b8;
+          .bottom_flex{
+            @include flexbox(row);
+            flex-wrap: wrap;
+            .footer-list{
+              flex-grow: 1;
+            }
+          }
+        }
+     }
+}

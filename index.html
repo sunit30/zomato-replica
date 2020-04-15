@@ -1,1 +1,254 @@
 <!-- In this file you are going to write html code -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <header class="h-container">
+    <div class="left_nav">
+      <a href="#"><img src="./images/get-the-app-plain.svg" alt="get the app">Get the app</a>
+    </div>
+    <div class="right_nav">
+      <li><a href="#" id="nav_item_1"><img src="./images/order-online.svg" alt="order food">Order Food</a></li>
+      <li><a href="#" id="nav_item_2"><img src="./images/book-a-table.svg" alt="book a table">Book a Table</a></li>
+      <li><a href="#" id="nav_item_3"><img src="./images/gold.svg" alt="gold">Zomato Gold</a></li>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="overlay">
+      <div class="banner_top">
+        <button type="button" class="btn btn-outline-primary login"><a href="#">Log in</a></button>
+        <button type="button" class="btn btn-outline-primary signup "><a href="#">Create an account</a></button>
+      </div>
+
+      <div class="banner_middle">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="./images/zomato_flat_bg_logo.svg" alt="logo">
+          <div class="card-body">
+            <h2 class="card-title">Find the best restaurants, cafés, and bars in Mumbai</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner_bottom">
+        <div class="search-restaurant">
+          <input id="search-rest" class="rounded" type="text" name="search"
+            placeholder="Search for restaurants or cuisines...">
+          <button id="search-btn" class="rounded" type="button">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="delivery_box">
+    <h2><strong>Order Food Online</strong></h2>
+    <p class="grey_color">Best restaurants delivering to your doorstep</p>
+    <div class="card text-center delivery_card">
+      <div class="widget card-body">
+        <h4 class="card-title">Enter your delivery location</h4>
+        <div class="input-group mb-3">
+          <input type="text" id="search-del" class="form-control" placeholder="Type delivery location here"
+            aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="detect-btn input-group-text" id="basic-addon2">Detect</button>
+          </div>
+        </div>
+        <button class="order-btn btn btn-primary">Order Food Online!</button>
+      </div>
+      <div class="card-footer text-muted">
+        <p class="promo">Use code <strong>ZOMATO</strong> to get up to 50% OFF. T&Cs apply.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="categories">
+    <h2 id="cat-title"><strong>Quick Searches</strong></h2>
+    <p id="cat-subtitle" class="grey_color">Discover restaurants by type of meal</p>
+    <ul class="category-list">
+      <li>
+        <img src="./images/delivery.png" alt="delivery">
+        <div>Delivery</div>
+      </li>
+      <li>
+        <img src="./images/pocket-friendly-delivery.png" alt="pocket-friendly-delivery">
+        <div>Pocket-Friendly Delivery</div>
+      </li>
+      <li>
+        <img src="./images/breakfast.png" alt="breakfast">
+        <div>Breakfast</div>
+      </li>
+      <li>
+        <img src="./images/lunch.png" alt="lunch">
+        <div>Lunch</div>
+      </li>
+      <li>
+        <img src="./images/dinner.png" alt="dinner">
+        <div>Dinner</div>
+      </li>
+      <li>
+        <img src="./images/drinks.png" alt="drinks">
+        <div>Drinks & Nightlife</div>
+      </li>
+      <li>
+        <img src="./images/cafes.png" alt="cafes">
+        <div>Cafes</div>
+      </li>
+      <li>
+        <img src="./images/desserts.png" alt="desserts">
+        <div>Desserts & Bakes</div>
+      </li>
+    </ul>
+  </section>
+
+
+  <section class="localities">
+    <h2 id="loc-title"><strong>Popular localities in and around Mumbai</strong></h2>
+    <p id="loc-subtitle" class="grey_color">Explore restaurants, bars, and cafés by locality</p>
+    <div class="locality_flex">
+      <ul class="locality-list">
+        <li>Lower Parel <span>(459)</span></li>
+        <li>Borivali West <span>(591 places)</span></li>
+        <li>Fort <span>(265 places)</span></li>
+        <li>Colaba <span>(199 places)</span></li>
+        <li>Pali Hill, Bandra West <span>(197 places)</span></li>
+        <li>Veera Desai Area <span>(96 places)</span></li>
+        <li>Panch Pakhadi, Thane West <span>(155 places)</span></li>
+        <li>Mulund West <span>(413 places)</span></li>
+        <li>Oshiwara, Andheri West <span>(254 places)</span></li>
+        <li>Kandivali West <span>(578 places)</span> </li>
+      </ul>
+      <ul class="locality-list">
+        <li>Lower Parel <span>(459)</span></li>
+        <li>Borivali West <span>(591 places)</span></li>
+        <li>Fort <span>(265 places)</span></li>
+        <li>Colaba <span>(199 places)</span></li>
+        <li>Pali Hill, Bandra West <span>(197 places)</span></li>
+        <li>Veera Desai Area <span>(96 places)</span></li>
+        <li>Panch Pakhadi, Thane West <span>(155 places)</span></li>
+        <li>Mulund West <span>(413 places)</span></li>
+        <li>Oshiwara, Andheri West <span>(254 places)</span></li>
+        <li>Kandivali West <span>(578 places)</span> </li>
+      </ul>
+      <ul class="locality-list">
+        <li>Lower Parel <span>(459)</span></li>
+        <li>Borivali West <span>(591 places)</span></li>
+        <li>Fort <span>(265 places)</span></li>
+        <li>Colaba <span>(199 places)</span></li>
+        <li>Pali Hill, Bandra West <span>(197 places)</span></li>
+        <li>Veera Desai Area <span>(96 places)</span></li>
+        <li>Panch Pakhadi, Thane West <span>(155 places)</span></li>
+        <li>Mulund West <span>(413 places)</span></li>
+        <li>Oshiwara, Andheri West <span>(254 places)</span></li>
+        <li>Kandivali West <span>(578 places)</span> </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+
+      <div class="footer_top">
+        <img src="./images/zomato_flat_bg_logo.svg" alt="logo">
+        <select name="cities" id="city-list">
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Surat">Surat</option>
+        </select>
+      </div>
+
+      <div class="footer_mid">
+        <div class="footer-sec">
+          <h2><strong>About Zomato</strong></h2>
+          <ul class="footer-list">
+            <li>About Us</li>
+            <li>Culture</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-sec">
+          <h2><strong>For Foodies</strong></h2>
+          <ul class="footer-list">
+            <li>Code of Conduct</li>
+            <li>Community</li>
+            <li>Verified Users</li>
+            <li>Blogger Help</li>
+            <li>Developers</li>
+            <li>Mobile Apps</li>
+          </ul>
+        </div>
+        <div class="footer-sec">
+          <h2><strong>For Restaurants</strong></h2>
+          <ul class="footer-list">
+            <li>Add a Restaurant</li>
+            <li>Claim your Listing</li>
+            <li>Business App</li>
+            <li>Business Owner Guidelines</li>
+            <li>Business Blog</li>
+            <li>Restaurant Widgets</li>
+            <li>Products for Businesses</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <h2><strong>Countries</strong></h2>
+        <div class="bottom_flex">
+          <ul class="footer-list">
+            <li>Australia</li>
+            <li>Brasil</li>
+            <li>Canada</li>
+            <li>Chile</li>
+            <li>Czech Republic</li>
+          </ul>
+          <ul class="footer-list">
+            <li>Australia</li>
+            <li>Brasil</li>
+            <li>Canada</li>
+            <li>Chile</li>
+            <li>Czech Republic</li>
+          </ul>
+          <ul class="footer-list">
+            <li>Australia</li>
+            <li>Brasil</li>
+            <li>Canada</li>
+            <li>Chile</li>
+            <li>Czech Republic</li>
+          </ul>
+          <ul class="footer-list">
+            <li>Australia</li>
+            <li>Brasil</li>
+            <li>Canada</li>
+            <li>Chile</li>
+            <li>Czech Republic</li>
+          </ul>
+          <ul class="footer-list">
+            <li>Australia</li>
+            <li>Brasil</li>
+            <li>Canada</li>
+            <li>Chile</li>
+            <li>Czech Republic</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
